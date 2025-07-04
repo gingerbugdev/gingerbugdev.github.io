@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'VHS Gothic'; /*a name to be used later*/
+    src: url('font.ttf'); /*URL to font*/
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "VHS Gothic", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+
+    background-image: url("/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(16px);
+    background-position: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.root {
+    display: flex;
+    margin-inline: auto;
+    flex-direction: column;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+
+    max-width: 800px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.root img {
+    width: 100%;
+    transition: 0.2s;
+}
+
+.logo {
+    image-rendering: pixelated;
+}
+
+.root .absoluteSize {
+    width: 50%;
+}
+
+.root img:hover {
+    transform: scale(1.1);
+}
+
+.shadow {
+    outline: solid;
+    margin-bottom: 20px;
+}
+
+.shadow:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 8px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: lightgray;
+
+    margin-top: 16px;
+    border-width: 8px;
+    border-color: var(--button-border);
+
+    width: 100%;
+}
